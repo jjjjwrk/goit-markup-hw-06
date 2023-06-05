@@ -437,7 +437,7 @@
           <p class="footer-input-title">Subscribe</p>
           <form class="footer-input-wrapper">
             <label class="label-footer">
-              <input name="user_email"
+              <input name="user-email"
                 type="email"
                 class="footer-email-input"
                 placeholder="E-mail"
@@ -471,10 +471,10 @@
             <label for="user-name" class="modal-form-input-deck">Name</label>
             <div class="modal-form-input-wrapper">
               <input 
-              type="text" 
+              type="text"
+              class="modal-form-input"
               name="user_name"
-              class="modal-form-input
-              id="user-name"" required pattern="^[a-zA-Zа-яА-Я]+$" minlength="2"
+              id="user-name" required pattern="^[a-zA-Zа-яА-Я]+$" minlength="2"
               />
               <svg class="modal-form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-icon-modal-1"></use>
@@ -510,10 +510,13 @@
             </div>
           </div>
           <div class="modal-form-textarea">
-            <label for="user_comment" class="modal-form-input-deck">Comment</label>
+            <label
+            for="user-comment" 
+            class="modal-form-input-deck">Comment
+          </label>
             <textarea
-              id="user_comment"
-              name="user_comment"
+              id="user-comment"
+              name="user-comment"
               class="modal-form-message"
               placeholder="Text input"
             ></textarea>
@@ -523,7 +526,7 @@
               id="user-privacy"
               type="checkbox"
               value="true"
-              name="user_privacy"
+              name="user-privacy"
               class="modal-form-check visually-hidden"
             />
             <label for="user-privacy" class="modal-form-check-desc">
@@ -532,10 +535,8 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              <div class="accept-wrapper">
               I accept the terms and conditions of the&nbsp;
               <a href="" class="privacy-policy-link">Privacy Policy</a>
-            </div>
             </label>
           </div>
           <button type="submit" class="modal-form-submit">Send</button>
