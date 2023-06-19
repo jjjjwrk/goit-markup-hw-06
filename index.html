@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- ===HEADER=== -->
@@ -26,7 +27,7 @@
           <a class="link logotype web-logo" href="./index.html"
             >Web<span class="studio-logo">Studio</span></a
           >
-          <ul class="list header-container">
+          <ul class="list header-nav-container">
             <li class="menu-item">
               <a class="link menu-studio menu-nav" href="./index.html"
                 >Studio</a
@@ -40,6 +41,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open-btn js-open-menu">
+          <svg class="svg-burger-btn" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-menu-btn"></use>
+          </svg>
+        </button>
         <address class="contact-menu">
           <ul class="list header-container">
             <li>
@@ -54,6 +60,70 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container" >
+        <div class="container mobile-container">
+        <button class="mobile-menu-close-btn js-close-menu" >
+          <svg class="mobile-close-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg> 
+        </button>
+        <ul class="list mobile-menu-nav-item">
+          <li class="">
+            <a class="mobile-link link" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="">
+            <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="">
+            <a class="mobile-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list mobile-menu-adress-item">
+          <li class="mobile-menu-tel">
+            <a class="link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-mail">
+            <a class="link mobile-mail-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="scial-list list">
+          <li class="scial-list-item">
+            <a href="" class="scial-list-link">
+              <svg width="24" height="24" class="scial-list-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="scial-list-item">
+            <a href="" class="scial-list-link">
+              <svg width="24" height="24" class="scial-list-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="scial-list-item">
+            <a href="" class="scial-list-link">
+              <svg width="24" height="24" class="scial-list-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="scial-list-item">
+            <a href="" class="scial-list-link">
+              <svg width="24" height="24" class="scial-list-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </header>
     <!-- ===HEADER/=== -->
@@ -71,8 +141,10 @@
 
       <!-- //MAIN SECTION/ -->
 
+      <!-- FEATURES -->
+
       <section class="feature-section">
-        <!-- FEATURES -->
+        
         <div class="container">
           <h2 hidden class="list">features</h2>
           <ul class="list list-features">
@@ -136,6 +208,7 @@
           <ul class="list list-practise">
             <li class="img-section-wawd">
               <img
+              srcset="./images/section2/img1.jpg 1x, ./images/section2/img1-2x.jpg 2x"
                 src="./images/section2/img1.jpg"
                 alt="stats"
                 width="360"
@@ -144,6 +217,7 @@
             </li>
             <li class="img-section-wawd">
               <img
+              srcset="./images/section2/img3.jpg 1x, ./images/section2/img3-2x.jpg 2x"
                 src="./images/section2/img3.jpg"
                 alt="communication"
                 width="360"
@@ -152,6 +226,7 @@
             </li>
             <li class="img-section-wawd">
               <img
+              srcset="./images/section2/img2.jpg 1x, ./images/section2/img2-2x.jpg 2x"
                 src="./images/section2/img2.jpg"
                 alt="create"
                 width="360"
@@ -166,10 +241,11 @@
       <!-- TEAM -->
       <section class="team">
         <div class="container">
-          <h2 class="section-titl">Our Team</h2>
+          <h2 class="section-team-title">Our Team</h2>
           <ul class="list master-list">
             <li class="first-master">
               <img
+                srcset="./images/section3/img.jpg 1x, ./images/section3/img2x.jpg 2x"
                 src="./images/section3/img.jpg"
                 alt="photo master"
                 width="264"
@@ -211,7 +287,8 @@
               </div>
             </li>
             <li class="first-master">
-              <img
+              <img 
+              srcset="./images/section3/img1.jpg 1x, ./images/section3/img1-2x.jpg 2x"
                 src="./images/section3/img1.jpg"
                 alt="photo master"
                 width="264"
@@ -253,6 +330,7 @@
             </li>
             <li class="first-master">
               <img
+              srcset="./images/section3/img2.jpg 1x, ./images/section3/img2-2x.jpg 2x"
                 src="./images/section3/img2.jpg"
                 alt="photo master"
                 width="264"
@@ -294,6 +372,7 @@
             </li>
             <li class="first-master">
               <img
+              srcset="./images/section3/img3.jpg 1x, ./images/section3/img3-2x.jpg 2x"
                 src="./images/section3/img3.jpg"
                 alt="photo master"
                 width="264"
@@ -545,7 +624,7 @@
         </form>
       </div>
     </div>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
