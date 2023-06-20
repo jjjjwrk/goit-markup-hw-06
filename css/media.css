@@ -275,6 +275,21 @@
     url(../images/hero-bg-tab2x.jpg);
   }
 }
+.button-list-portfolio{
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.app-list-item{
+  width: calc((100% - 24px) / 2);
+  display: block;
+}
+.app-list-port{
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 72px 24px;
+}
 }
 /* COMP */
 @media screen and (min-width: 1158px) {
@@ -396,6 +411,20 @@
     ),
     url(../images/hero-bg-comp-2x.jpg);
   }
+}
+.button-list-portfolio{
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.app-list-item {
+  width: calc((100% - 48px) / 3);
+  display: block;
+}
+.app-list-port{
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 48px 24px;
 }
 }
 

@@ -33,6 +33,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -574,7 +576,7 @@ align-items: center;
 }
 /* PORTFOLIO */
 .main-portfolio {
-  padding: 96px 0 120px;
+  padding: 48px 0 48px;
 }
 
 .button-list {
@@ -620,15 +622,14 @@ align-items: center;
 
 .button-list-portfolio {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 48px;
 }
 
 .bottom-portfolio {
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 8px 16px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -641,7 +642,6 @@ align-items: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
   background: #f4f4fd;
-  padding: 12px 24px;
   border: 1px solid #e7e9fc;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -657,7 +657,8 @@ align-items: center;
 }
 
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -699,14 +700,17 @@ align-items: center;
 }
 
 .app-list-port {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
 }
 .app-list-item {
-  width: calc((100% - 48px) / 3);
-  display: block;
+  /* width: calc((100% - 48px) / 3); */
+  width: 100%;
+  display: flex;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-title {
